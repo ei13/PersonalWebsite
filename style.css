@@ -1,0 +1,215 @@
+/*Add style to divide the sections*/
+hr {
+    border: 6px dotted #2973b2; /*Change the shape of the lines*/
+    border-bottom: none;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*Font Style*/
+.libre-baskerville-regular {
+    font-weight: 100;
+    font-size: clamp(12px, 1.5vw + 6px, 21px);
+}
+
+.libre-baskerville-semi-bold {
+    font-weight: 100;
+    font-size: clamp(20px, 3vw + 10px, 55px);
+}
+  
+.libre-baskerville-bold {
+    font-weight: 700;
+    font-size: clamp(35px, 5vw + 20px, 105px); /*Change the font size of the lines*/
+}
+
+body {
+    color: #2973b2;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/*Round off the corners of all the images*/
+.img-fluid {
+    border-radius: 1rem;
+}
+
+/*Change the color of the link*/
+.icon-link {
+    color: #2973b2; 
+    text-decoration-color: #2973b2;
+}
+
+.icon-link:hover {
+    color: #e3d3ab; 
+    text-decoration-color: #e3d3ab;
+}
+
+/*Title Style*/
+.box-title {
+    background-color: #f2efe7;
+    border-radius: 3rem;
+}
+
+.background-title {
+    background-color: #2973b2;
+}
+
+#title, .background-title {
+    padding: 1.3vw; /*Add space for the frame*/
+}
+
+.background-title h2 {
+    padding-top: 20px;
+}
+
+ /*Adjust the position of the images in the title section*/
+.pc {
+    position: relative;
+    top: 115px;
+    right: 180px;
+    width: auto;
+    height: 10vw;
+}
+  
+.arrow {
+    position: relative;
+    top: 0px;
+    left: 300px;
+    width: auto;
+    height: 6vw;
+}
+
+  /*Presentation Style*/
+.background-body {
+    background-color: #f2efe7;
+}
+
+ /*Change the style of the button*/
+.btn-primary, .btn-primary:visited {
+    background-color: #2973b2 !important;
+    border-color: #2973b2 !important;
+    color: #f2efe7 !important;
+}
+
+.btn-primary:active, .btn-primary:hover {
+    background-color: #f2efe7 !important;
+    border-color: #2973b2 !important;
+    color: #2973b2 !important;
+}
+
+/*Get In Touch Style*/
+#GetInTouch, .background-title {
+    padding: 1.3vw 1.3vw 0vw 1.3vw;
+} 
+
+  /*Adjust the position of the images in the Get In Touch section*/
+.iphode {
+    position: relative;
+    top: 10px;
+    width: auto;
+    height: 9vw;
+}
+
+.pencil {
+    position: relative;
+    bottom: 5px;
+    right: 40px;
+    width: auto;
+    height: 6vw;
+}
+
+#GetInTouch > p {
+    color: #f2efe7;
+    margin: 0;
+}
+
+/*Style for laptop and desktop*/
+@media (min-width:992px) and (max-width:1199.98px) {
+  /*Title Style*/
+    /*Adjust the position of the images in the title section*/
+  .arrow {
+      left: 150px;
+  }
+
+  .pc {
+      right: 50px;
+  }
+}
+
+/*Style for tablet*/
+@media (min-width:768px) and (max-width:991.98px) {
+  /*Add space from a block and another*/
+  .custom-margin {
+    margin-top: 100px;
+  }
+  /*Title Style*/
+    /*Adjust the position of the images in the title section*/
+  .arrow {
+      left: 120px;
+    }
+
+  .pc {
+      top: 100px;
+      right: 50px;
+    }
+}
+
+/*Style for smartphone*/
+@media(min-width:576px) and (max-width:767.98px) {
+  /*Add space from a block and another*/
+  .custom-margin {
+        margin-top: 100px;
+  }
+  /*Title Style*/
+    /*Adjust the position of the images in the title section*/
+  .arrow {
+      left: 110px;
+  }
+
+  .pc {
+      top: 90px;
+      right: 50px;
+      height: 12vw;
+  }
+
+  /*Get In Touch Style*/
+   /*Remove Margins*/
+  #GetInTouch .row > .col-md-4 {
+      margin-left: 0 !important; 
+  }
+
+    /*Change the position of the social media links*/
+  .list-unstyled {
+        justify-content: flex-start !important;
+  }
+}
+
+/*Style for mobile*/
+@media(max-width:575.98px) {
+/*Add space from a block and another*/
+  .custom-margin {
+      margin-top: 60px;
+  }
+
+/*Adjust the radius border*/
+  .box-title {
+      border-radius: 1rem;
+  }
+ 
+  /*Title Style*/
+    /*Adjust the position of the images in the title section*/
+  .arrow {
+      left: 60px;
+  }
+
+  .pc {
+      top: 90px;
+      right: 50px;
+  } 
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set the language of the document to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Set the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Make the website responsive on mobile devices -->
+    <title>Sara's Website</title> <!-- Set the title of the webpage that appears in the browser tab -->
+    <link rel="icon" type="image/x-icon" href="./image/favicon.png" /> <!-- Link to the favicon for the website -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect to Google Fonts (cross-origin) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> <!-- Link to the Libre Baskerville font from Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Link to Bootstrap CSS from a CDN with integrity check -->
+    <link rel="stylesheet" href="./style.css" /> <!-- Link to the custom stylesheet for the website -->
+</head>
+
+<body>
+    <!--Title-->
+    <section id="title" class="background-title"> <!-- Main section for the title with a background -->
+        <div class="pt-3 pb-1 text-center box-title"> <!-- Padding top and bottom, centered text -->
+            <div class="container"> <!-- Container to hold the content -->
+                <div class="row"> <!-- Row to organize content in columns -->
+                    <div class="col-2"> <!-- Left column for the arrow image -->
+                        <img class="arrow" src="./image/arrow_svg.svg" alt="Mouse cursor drawing">
+                    </div>
+                    <div class="col-8"> <!-- Center column for the name and title -->
+                        <h1 class="fw-bold libre-baskerville-bold">Sara</h1> <!-- Text with with bold styling -->  
+                        <h1 class="fw-bold libre-baskerville-bold">Osmani </h1>
+                        <h2 class="libre-baskerville-regular">I'm an engineer.</h2>
+                    </div>
+                    <div class="col-2">
+                        <img class="pc" src="./image/pc_svg.svg" alt="Laptop drawing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Presentation-->
+    <section id="presentation" class="background-body"> <!-- Main section for presentation with a background -->
+        <div class="container col-xxl-8 px-4 py-5"> <!-- Container to hold the content with specific width and padding -->
+            <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5"> <!-- Row that reverses order on large screens and centers content -->
+              <div class="col-10 col-sm-8 col-lg-6"> <!-- Column for the image, responsive width for different screen sizes -->
+                <img src="./image/MyPhoto.jpeg" class="img-fluid" alt="Sara's photo" width="700" height="200"> <!-- Image centered on large screens, responsive -->
+              </div>
+              <div class="col-lg-6"> <!-- Column for text content -->
+                <h3 class="fw-bold libre-baskerville-semi-bold mb-3">Hi there!</h3>
+                <p class="libre-baskerville-regular">I’m Sara, a computer engineer with a passion for front-end development. I started my career in the automation sector, but I discovered that creating user interfaces is what excites me the most. If you want to learn more about my career and educational background, click on the ‘About Me’ button.</p>
+                <div> 
+                <a href="./CV/index.html"><button type="button" class="btn btn-primary btn-lg px-4 libre-baskerville-regular">About Me</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <hr />
+    </section>
+    
+    <!-- myProject -->
+     <section id="myproject" class="background-body"> <!-- Section for displaying the projects with a specific background -->
+        <div class="container px-4 py-5"> <!-- Container with padding for content -->
+            <h2 class="pb-2 libre-baskerville-semi-bold text-center">My projects</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2"> <!-- Row for project features with spacing and responsive column layout -->
+              <div class="feature col"> <!-- First project feature column -->
+                <div class="d-inline-flex align-items-center justify-content-center mb-3"> <!-- Flex container to center the image -->
+                  <a href="./FalgProject/index.html"><img src="./image/Flag_of_Turkey.svg.webp" class="img-fluid" height="230" alt="Turkey Flag"></a>
+                </div>
+                <h3 class="fs-2 libre-baskerville-regular">Flag of Turkey</h3>  <!-- Subheading for the first project -->
+                <p class="libre-baskerville-regular">As part of my initial project, I recreated the flag of Turkey.</p>
+                <a href="./FalgProject/index.html" class="icon-link"> <!-- Link to the project page  -->
+                  Turkey Flage
+                </a>
+              </div>
+              <div class="feature col custom-margin"> <!-- Second project feature column -->
+                <div class="d-inline-flex align-items-center justify-content-center mb-3"> <!-- Flex container to center the image -->
+                  <a href="./TinDogProject/index.html"><img src="./image/TinDog.png" class="img-fluid" height="230" alt="Photo of a dog dating website"></a>
+                </div>
+                <h3 class="fs-2 libre-baskerville-regular">TinDog</h3> <!-- Subheading for the second project -->
+                <p class="libre-baskerville-regular">For my second project, I decided to get creative and build a hypothetical dating site for dogs!</p>
+                <a href="./TinDogProject/index.html" class="icon-link"> <!-- Link to the project page with descriptive text -->
+                  TinDog
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr />
+     </section>
+
+     <!--About Me-->
+     <section id="AboutMe" class="background-body">  <!-- Container for the About Me content -->
+      <div class="container col-xxl-8 px-4 pt-5">
+        <h2 class="pb-2 libre-baskerville-semi-bold text-center">About Me</h2> <!-- Main heading for the section, centered and bold -->
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5"> <!-- Row for the first set of content with responsive layout -->
+          <div class="col-12 col-lg-6">  <!-- Column for text content on smaller devices (full width) and half width on larger devices -->
+            <h3 class="libre-baskerville-regular mb-3 fs-2">Underwater Adventures</h3>
+            <p class="libre-baskerville-regular">I’m a scuba diver, and whenever I get the chance, I dive into exciting underwater adventures!</p>
+          </div>
+          <div class="col-7 col-lg-6 d-flex align-items-center justify-content-center"> <!-- Column for the image, same responsive behavior as the text column -->
+            <img src="./image/scuba_svg.svg" class="img-fluid" height="130px" alt="Drawing of a scuba driver"> <!-- Image responsive and centered -->
+          </div>
+        </div>
+      </div>
+      <div class="container col-xxl-8 px-4 pb-5"> <!-- Another container for the second adventure -->
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 pb-5"> <!-- Row for the second set of content -->
+          <div class="col-12 col-lg-6 custom-margin"> <!-- Column for text content -->
+            <h3 class="libre-baskerville-semi-bold display-5 mb-3 fs-2">A Year of Adventure in SouthAfrica</h3>
+            <p class="libre-baskerville-regular">I spent a whole year volunteering in South Africa, and it was an unforgettable adventure! Traveling and discovering new cultures have always been my passions.</p>
+          </div>
+          <div class="col-7 col-lg-6 d-flex align-items-center justify-content-center"> <!-- Column for the image -->
+            <img src="./image/SouthAfrica_svg.svg" class="img-fluid" style="max-height: 200px;" alt="South Africa map drawing"> <!-- Image responsive and centered, with a max height -->
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!--Get In Touch--> 
+    <section id="GetInTouch" class=" background-title hide">
+      <div class=" box-title">
+        <div class="container">
+          <footer class="py-4"> <!-- Footer section with vertical padding -->
+            <div class="row"> <!-- Row for layout -->
+              <div class="col-md-5 col-sm-6 offset-sm-1 mb-3 text-center"> <!-- Column for the contact header and description -->
+                <h2 class="libre-baskerville-semi-bold">Get In Touch</h2>
+                  <p class="libre-baskerville-regular">If you love travelling as much as I do.</p>
+                  <p class="libre-baskerville-regular">Love traveling as much as I do? Let's chat about our epic adventures while we code!</p>
+              </div>
+              <div class="col-md-4 col-sm-4 offset-sm-1 mt-5"> <!-- Column for contact information and social links -->
+                <p class="libre-baskerville-regular mb-0">PHONE</p>
+                <p>+39 3272566958</p>
+                <p class="libre-baskerville-regular mb-0">EMAIL</p>
+                <p><a href="mailto:saraosmaani@gmail.com" class="icon-link">saraosmaani@gmail.com</a></p>
+                <ul class="col-12 justify-content-end list-unstyled d-flex mt-3"> <!-- Social media links -->
+                  <li><a href="./CV/index.html"><img src="./image/cv_svg.svg" height="27"></a></li>
+                  <li class="ms-2"><a href="https://www.linkedin.com/in/saraosmaani"><img src="./image/linkedin_svg.svg" height="30"></a></li>
+                </ul>
+            </div>
+          <div class="col-sm-1 d-none d-sm-block px-0""> <!-- Decorative images for medium and larger screens -->
+            <img src="./image/ipod_svg.svg" class="iphode" alt="Iphode drawing">
+            <img src="./image/pencil_svg.svg" class="pencil" alt="Pencil drawing">
+          </div>
+        </div>
+        </footer>
+      </div>
+    </div>
+    <p class="d-flex align-items-center justify-content-center">©SaraOsmani</p> <!-- Footer copyright notice, centered -->
+  </section>   
